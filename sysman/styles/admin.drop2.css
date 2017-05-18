@@ -1,0 +1,127 @@
+/*body { behavior:url("csshover3.htc");	}*/
+
+/* the menu */
+
+	ul.nav_main, ul.nav_main li, ul.nav_main a {
+		/*display:block;*/
+		margin:0;
+		padding:0;
+		border:0;
+		z-index:1000001;
+	}
+
+	ul.nav_main {
+		border-bottom:0px solid #939185;
+		background: #FFF;
+		list-style:none;
+	}
+	
+	ul.nav_main, ul.nav_main li{
+   		height:2.7em;
+    }
+	
+	ul.nav_main li {
+		position:relative;
+		display:inline;
+		padding:0px;
+		z-index:9;
+		float:left;
+		border: 1px solid #999;
+		margin-right:1px;
+	}
+	
+	ul.nav_main li ul{
+		position:absolute;
+		left:0;
+    	width: 170px;
+		border: 1px solid #9d9da1;
+		border-width: 1px 1px 10px 1px;
+	}
+	
+	
+		ul.nav_main li.folder ul {
+			position:absolute;
+			left:0px; /* IE */
+			top:2.7em;
+		}		
+			ul.nav_main li.folder>ul { left:0px; } /* others */
+	
+		
+	ul.nav_main a {
+		display:block; 
+		font-family: verdana,arial,tahoma,helvetica;
+		padding:0px 15px 0 15px;
+		border:1px solid #999;
+		border-width:0 0px 0px 0;
+		text-decoration:none;
+		color:#333333;
+		font-weight:normal;
+		line-height:2.7em;
+		margin:0;
+		text-transform:capitalize;
+		font-weight:normal;
+	}
+		/*li>a { width:170px; }*/ /* others */
+	
+	ul.nav_main li ul,
+	ul.nav_main li ul li{
+		width:auto;
+    	min-width: 190px;
+		
+	}
+	
+	ul.nav_main ul li{
+	float:none;
+	display:block;
+	border: none;  height:auto;
+	}
+	ul.nav_main ul li strong{
+		display:block; padding:3px; background: #E2E2E2;
+	}
+	ul.nav_main ul li a{
+	display:block;border-bottom:1px solid #D7D7D7;
+	}
+	
+	ul.nav_main li.folder ul li ul {
+		left:170px;
+		top: 0;
+	}
+	
+	
+	ul.nav_main li,
+	ul.nav_main li.folder,
+	ul.nav_main li a.submenu {
+		background-color:#F7F7F7/*F1E7CC*/;
+	}
+	
+	ul.nav_main li.sep 	{ 
+		background: #FFF; 
+		border:1px solid #FFF;
+		/*display:none;*/
+	}
+	
+	/* regular hovers */
+
+	ul.nav_main a:hover {
+		background-color:#993300 !important;
+		color:#FFFFFF;
+	}
+		ul.nav_main li.folder a:hover {
+			background-color:#993300;
+		}
+	
+	/* hovers with specificity */
+	
+	ul.nav_main li.folder:hover, ul.nav_main li.folder { 
+		z-index:1000001; background-color:#993300;
+	}		
+		
+	ul.nav_main  ul, ul.nav_main li:hover ul ul {
+		display:none;
+	}
+
+	ul.nav_main li:hover ul, ul.nav_main li:hover li:hover ul {
+		display:block;
+	}		
+	
+	ul.nav_main li li a.indent { padding-left: 10px !important;}

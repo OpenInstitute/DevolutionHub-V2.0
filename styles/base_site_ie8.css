@@ -1,0 +1,31 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media \0screen\ and ( min-width: 1100px ) 
+{
+	.page		{ width: 100%; }
+	.flex_width { width: 100%; }
+	.page_width { width: 1200px;  }	
+}
+
+@media \0screen\ and (max-width: 1099px) 
+{
+	.page { width: 98%; }
+	.page_width, .flex_width { width: 100%;}
+}
+
+@media \0screen\ and (max-width: 640px) 
+{
+	#wrap_nav_head { float:none; left:0;}
+	html { font-size: 75%;}
+}

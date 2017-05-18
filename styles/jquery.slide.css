@@ -1,0 +1,63 @@
+/*
+Name: Sliding Login Panel with jQuery 1.3.2
+Author: Jeremie Tisseau
+Author URI: http://web-kreation.com/
+Date: March 26, 2009
+Version: 1.0
+
+	Copyright 2009 Jeremie Tisseau
+	"Sliding Login Panel with jQuery 1.3.2" is distributed under the GNU General Public License version 3:
+	http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+/***** clearfix *****/
+
+/*****   
+* @sliding Container 
+********************************/
+
+.slide-box { margin:0; position:relative;  overflow:visible; zoom: 1;}
+
+/** html .slide-box { height:50px; }*/
+
+
+
+
+
+/**   
+* @sliding panel  
+********************************/
+
+.slide-box #toppanel {
+    position: absolute;   			/*Panel will overlap  content */
+    /*position: relative;*/   		/*Panel will "push" the content down */
+    top: 80px;
+    width: 250px /*100%*/;
+    z-index: 999;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+	right:0px;
+}
+
+.slide-box #slide-panel {
+	width: 100%;
+	/*color: #EAEAEA;*/
+	overflow: hidden;
+	position: relative;
+	z-index: 3;
+	background-color: #000;
+	background-image: -moz-linear-gradient(center top , #FFF, #e3e5e5);
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+	display: none;
+}
+
+.slide-box #slide-panel .slide-panel-content {
+	padding: 10px 4px 10px 5px; /*4px 8px 2px 8px*/
+}
+
+/*#slide-close { height:auto; padding:3px; border: none !important; line-height:normal; text-align:center !important;}*/
+#slide-close { display:inline-block; width:15px; background: none; border: 0px solid; height: 40px; line-height:25px; padding:0;text-align:right; color:#fff !important;}

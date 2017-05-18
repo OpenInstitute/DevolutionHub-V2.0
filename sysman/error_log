@@ -1,0 +1,18 @@
+[13-Mar-2017 07:15:12 America/Denver] PHP Notice:  Undefined index: adminname in /home2/sandbpf0/public_html/sandbox/devhub/sysman2/includes/nav_left.php on line 19
+[13-Mar-2017 07:15:12 America/Denver] PHP Notice:  Undefined index: actype in /home2/sandbpf0/public_html/sandbox/devhub/sysman2/home.php on line 29
+[13-Mar-2017 23:21:12 America/Denver] PHP Notice:  Undefined index: adminname in /home2/sandbpf0/public_html/sandbox/devhub/sysman2/includes/nav_left.php on line 19
+[13-Mar-2017 23:21:12 America/Denver] PHP Notice:  Undefined index: actype in /home2/sandbpf0/public_html/sandbox/devhub/sysman2/hforms.php on line 29
+[07-Apr-2017 08:09:01 America/Denver] PHP Notice:  Undefined index: published in /home2/sandbpf0/public_html/sandbox/devhub/sysman2/includes/adm_frm_organizations.php on line 70
+[07-Apr-2017 08:09:01 America/Denver] PHP Notice:  Undefined index: is_partner in /home2/sandbpf0/public_html/sandbox/devhub/sysman2/includes/adm_frm_organizations.php on line 71
+[08-Apr-2017 05:27:55 America/Denver] PHP Notice:  Undefined variable: cms_bg_color in /home2/sandbpf0/public_html/sandbox/devhub/sysman2/index.php on line 10
+[08-Apr-2017 05:27:55 America/Denver] PHP Notice:  Use of undefined constant SITE_LOGO - assumed 'SITE_LOGO' in /home2/sandbpf0/public_html/sandbox/devhub/sysman2/index.php on line 11
+[08-Apr-2017 05:27:55 America/Denver] PHP Notice:  Use of undefined constant SITE_TITLE_LONG - assumed 'SITE_TITLE_LONG' in /home2/sandbpf0/public_html/sandbox/devhub/sysman2/index.php on line 11
+[08-Apr-2017 05:28:02 America/Denver] PHP Notice:  Undefined variable: cms_bg_color in /home2/sandbpf0/public_html/sandbox/devhub/sysman2/index.php on line 10
+[08-Apr-2017 05:28:02 America/Denver] PHP Notice:  Use of undefined constant SITE_LOGO - assumed 'SITE_LOGO' in /home2/sandbpf0/public_html/sandbox/devhub/sysman2/index.php on line 11
+[08-Apr-2017 05:28:02 America/Denver] PHP Notice:  Use of undefined constant SITE_TITLE_LONG - assumed 'SITE_TITLE_LONG' in /home2/sandbpf0/public_html/sandbox/devhub/sysman2/index.php on line 11
+[08-Apr-2017 05:28:34 America/Denver] PHP Notice:  Use of undefined constant SITE_LOGO - assumed 'SITE_LOGO' in /home2/sandbpf0/public_html/sandbox/devhub/sysman2/includes/nav_left.php on line 6
+[08-Apr-2017 05:28:34 America/Denver] PHP Notice:  Undefined variable: sys_us_admin in /home2/sandbpf0/public_html/sandbox/devhub/sysman2/includes/nav_left.php on line 19
+[08-Apr-2017 05:28:34 America/Denver] PHP Fatal error:  Call to undefined function clean_title() in /home2/sandbpf0/public_html/sandbox/devhub/sysman2/home.php on line 46
+[08-Apr-2017 05:32:26 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home2/sandbpf0/public_html/sandbox/devhub/classes/cls.data.site.php on line 996
+[08-Apr-2017 14:37:06 Africa/Nairobi] PHP Notice:  Undefined index: adminname in /home2/sandbpf0/public_html/sandbox/devhub/sysman2/includes/nav_left.php on line 19
+[08-Apr-2017 14:37:06 Africa/Nairobi] PHP Notice:  Undefined index: actype in /home2/sandbpf0/public_html/sandbox/devhub/sysman2/hforms.php on line 29

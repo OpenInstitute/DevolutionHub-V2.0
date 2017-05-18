@@ -1,0 +1,315 @@
+@charset "utf-8";
+
+@media screen, projection
+{
+
+/*** ESSENTIAL STYLES ***/
+.sf-menu, .sf-menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+.sf-menu {
+	padding-left: 20px;
+}
+
+.sf-menu ul {
+	position:		absolute;
+	top:			-999em;
+	margin:		0; 
+	padding: 		0;
+}
+.sf-menu ul ul {	
+	padding: 0;	
+}
+
+
+	
+.sf-menu ul li {
+	width:			100%;
+}
+.sf-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li {
+	float:			left;
+	position:		relative;
+	zoom: 1;
+}
+.sf-menu a {
+	display:		block;
+	position:		relative; 
+}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left:			0px;
+	top:			40px; /* match top ul list item height */
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	top:			0;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	top:			0;
+}
+
+
+
+
+.sf-menu ul,
+.sf-menu ul ul {
+	width:			200px;
+}
+
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul,
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left:			190px; 		/* match ul width */
+}
+
+
+
+/* ======================================
+ DEMO SKIN 
+ ======================================== */
+
+.sf-menu {
+	width: auto; height:40px; 
+}
+
+.sf-menu {
+	float:			none;
+	margin-bottom:	0em;
+}
+.sf-menu a {
+	border-left:	0px dotted #AD5000 !important;
+	padding: 		0px 15px 0 15px;
+	margin: 0;
+	text-decoration:none;
+	line-height:	40px;
+	height: 		40px;
+	text-align:		left !important;
+	font-weight:	normal;
+	font-size:		13px;
+	font-weight:	500;
+	font-family: Tahoma, Arial, sans-serif;
+	text-transform: capitalize;
+}
+
+* html .sf-menu a { padding: 0px; zoom: 1; }
+
+.sf-menu a, .sf-menu a:visited {
+	color:	#036;
+}
+
+
+.sf-menu li li {
+	border-left:none;
+}
+
+
+
+/*** arrows **/
+.sf-menu a.sf-with-ul {
+	min-width:		1px; /* trigger IE7 hasLayout so spans position accurately */
+	padding-right: 22px;
+	
+}
+
+
+
+
+
+/*** personalized ***/
+
+
+
+.sf-menu li li {
+	border-radius: 0px;
+	border-bottom:0px solid #d9d9d9 !important;
+	display:block;
+}
+
+ul.sf-menu li ul li a,
+ul.sf-menu li li a,
+ul.sf-menu li li span {
+	height: auto !important; 
+	padding: 0px 5px 0px 15px;
+	margin:0px;
+	text-align:left !important;
+	text-indent: 0px;
+	font-weight:normal;
+	display:block;
+	line-height: 2;
+	font-size: 12px;
+	letter-spacing: normal;
+	border-bottom:1px solid #E8E8E8 !important;
+}
+
+
+
+/*
+.sf-menu li,
+.sf-menu li ul {
+	background-color:#E8E8E8;
+	border:none;
+}*/
+
+.sf-menu a.current { color:#CD6209; font-weight: 500; }
+
+.sf-menu li.sfHover,
+.sf-menu a:hover,
+.sf-menu a.current,
+.sf-menu li ul li/*,
+.sf-menu li li a:hover, 
+.sf-menu li li a.current*/ {
+	 background-color: #f8f8f8;
+}
+
+.sf-menu li li a:hover, 
+.sf-menu li li a.current {
+	 background-color: #E8E8E8;
+}
+
+	.sf-menu li li.subhead span {
+		background: #f2f2f2;
+		font-weight: bold;
+		display:block;
+	}
+	
+	.sf-menu li li.subhead ul.sublevel{
+		position:		relative !important;
+		top:			0em;
+		left: 0px !important;
+		display:block !important;
+	}
+	
+	.sf-menu li li.subhead ul.sublevel a {
+		padding-left: 25px;
+	}
+	
+	.sf-menu li li.subhead ul.sublevel li:last-child a {
+		padding-bottom: 5px;	
+	}
+
+
+.sf-menu .divider-vertical {
+    border-left: 1px solid #d6d6d6;
+    height: 30px;
+    margin: 5px 0px;
+	display: none;
+}
+
+div.wrap-nav-main {
+	display: block;
+	background-color: #f5f5f5 !important;
+	border:1px solid #E7E7E7;
+	border-width: 1px 0 0px;
+	margin: 3px 0 0;
+}
+
+div.page-nav-main {
+	display:block; 
+	border:0px solid;
+	clear:both;
+	height:40px; 
+	padding:0px 20px 1px 0;
+	margin:0;
+	background: none;
+}
+
+
+
+ul.sf-menu li ul li, ul.sf-menu li li li, ul.sf-menu li li a  { z-index: 1005 !important; }
+
+ul.sf-menu li.first a { border-left: none !important; }
+
+ul.sf-menu li.last a { padding-right:0;  }
+
+
+
+.sf-menu .fa, 
+.sf-menu [class^="fa-"],
+.sf-menu [class*=" fa-"], 
+.sf-menu [class^="icon-"],
+.sf-menu [class*=" icon-"] {
+	font-size:17px;	/*display: inline-block; margin-right:.4em; opacity: 0.8 !important; color: #FFD240;*/
+}
+
+.sf-menu li.current a  i[class^="fa-"],
+.sf-menu a.current i[class^="fa-"],
+.sf-menu a:hover i[class^="fa-"],
+.sf-menu li:hover i[class^="fa-"], 
+.sf-menu li.sfHover a i[class^="fa-"] {	
+	/*color: #EE2028; */
+}
+
+
+ul#nav_ac { float: right;  padding-left: 0px; padding-right: 20px;}
+ul#nav_ac li { border: none;  }
+ul#nav_ac ul{ left:auto; right:-10px; }
+ul#nav_ac ul,
+ul#nav_ac ul ul {
+	width: 170px;
+}
+
+
+/*** DROP DOWN ARROWS (for all except IE7) **/
+
+ul.sf-arrows .sf-with-ul {
+	padding-right: 22px;
+	*padding-right: 22px; /* no CSS arrows for IE7 (lack pseudo-elements) */
+}
+/* styling for both css and generated arrows */
+ul.sf-arrows .sf-with-ul:after {
+	content: '';
+	position: absolute;
+	top: 55%;
+	right: 5px;
+	margin-top: -3px;
+	height: 0;
+	width: 0;
+	/* order of following 3 rules important for fallbacks to work */
+	border: 4px solid transparent;
+	border-top-color: #6C6B6A; 
+}
+ul.sf-arrows > li > .sf-with-ul:focus:after,
+ul.sf-arrows > li:hover > .sf-with-ul:after,
+ul.sf-arrows > .sfHover > .sf-with-ul:after {
+	border-top-color: #6C6B6A; 
+}
+/* styling for right-facing arrows */
+ul.sf-arrows ul .sf-with-ul:after {
+	margin-top: -5px;
+	margin-right: -3px;
+	border-color: transparent;
+	border-left-color: #6C6B6A; /* edit this to suit design (no rgba in IE8) */
+}
+ul.sf-arrows ul li > .sf-with-ul:focus:after,
+ul.sf-arrows ul li:hover > .sf-with-ul:after,
+ul.sf-arrows ul .sfHover > .sf-with-ul:after {
+	border-left-color: #6C6B6A;
+}
+
+ul.sf-arrows li.current a.sf-with-ul:after,
+ul.sf-arrows a.current.sf-with-ul:after {
+	border-top-color: #6C6B6A;
+}
+
+ul.sf-arrows li.current ul li > .sf-with-ul:after {
+	border-color: transparent;
+	border-left-color: #6C6B6A;
+}
+
+
+}
